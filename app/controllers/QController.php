@@ -24,5 +24,8 @@ class QController extends \lithium\action\Controller {
 	public function marketcap(){
 		return "666";
 	}
+	public function addressbalance(){
+	return "777";
+	}
 } // class
 ?>
