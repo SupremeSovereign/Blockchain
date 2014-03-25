@@ -1,5 +1,5 @@
 <?php
-namespace app\extensions\action;
+namespace app\extensions\action; 
 use lithium\action\DispatchException;
 
 class Coingreen extends \lithium\action\Controller{
