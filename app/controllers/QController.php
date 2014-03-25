@@ -1,6 +1,6 @@
 <?php
 namespace app\controllers;
-use app\extensions\action\coingreen;
+use app\extensions\action\Coingreen;
 
 class QController extends \lithium\action\Controller {
 	public function index(){
