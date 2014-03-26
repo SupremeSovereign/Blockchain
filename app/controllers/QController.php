@@ -50,7 +50,7 @@ class QController extends \lithium\action\Controller {
 	public function totalbc(){
 		$coingreen = new COINGREEN('http://'.COINGREEN_WALLET_SERVER.':'.COINGREEN_WALLET_PORT,COINGREEN_WALLET_USERNAME,COINGREEN_WALLET_PASSWORD);
 		$getinfo = $coingreen->getinfo();
-		return (string)($getinfo['blocks']*5000*1000)." M";
+		return (string)($getinfo['blocks']*5000*1000)."";
 	}
 	public function marketcap(){
 		$coingreen = new COINGREEN('http://'.COINGREEN_WALLET_SERVER.':'.COINGREEN_WALLET_PORT,COINGREEN_WALLET_USERNAME,COINGREEN_WALLET_PASSWORD);
