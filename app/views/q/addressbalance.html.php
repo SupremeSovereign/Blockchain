@@ -1,3 +1,3 @@
 <?php 
-print_r($amount);
+print_r($amount*10000000);
 ?>

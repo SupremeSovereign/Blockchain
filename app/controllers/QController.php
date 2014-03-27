@@ -70,7 +70,11 @@ class QController extends \lithium\action\Controller {
 			if(!$txid['vin']['coinbase']){
 				if($txid['vout']!=""){
 					foreach($txid['vout'] as $vout){
-						$amount = $amount + $vout['value'];
+						foreach($vout['scriptPubKey']['addresses'] as $addresses){
+							if($addresses == $address){
+								$amount = $amount + $vout['value'];
+							}
+						}
 					}
 				}
 			}
